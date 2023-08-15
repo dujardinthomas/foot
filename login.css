@@ -1,0 +1,16 @@
+section{
+    
+}
+
+.titre{
+    text-align: center;
+    font-size: 40px;
+}
+
+.login{
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px;
+}
+
