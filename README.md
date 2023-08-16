@@ -8,11 +8,11 @@ site regroupant tout les membres d'un club de foot avec authentification lié da
 - Exécuter le terminal de la base de données (postgresql pour ma part)
 - Exécuter le script ***foot/ScriptFoot.sql*** dans la base de données pour récupérer les tables 
     - users (identifiants pour accéder au site)
-    - joueurs (chaque joueurs)
-    - equipes (chaque équipe)
-    - rencontres (chaque rencontres)
-- Mettre a jour le fichier ***foot/WEB-INF/src/main/DS.java*** en y incluant vos identifiants de connexion de la base de données
-- Recompiler le projet java pour obtenir les nouveaux fichiers .classes
+    - joueurs
+    - equipes
+    - rencontres
+- Mettre a jour le fichier ***foot/connexionBDD.txt*** en y incluant vos identifiants de connexion de la base de données
+- Recompiler si nécéssaire le projet java pour obtenir les nouveaux fichiers .classes
 - Exécuter Tomcat
 
 ## Fonctionnalités
@@ -31,3 +31,6 @@ site regroupant tout les membres d'un club de foot avec authentification lié da
     - affichage des utilisateurs
 
     - suppression d'un joueur et d'un utilisateur (page **delete?table=[NomDeLaTable]** puis formulaire avec toutes les colonnes)
+
+
+Si mot de passe oublié, demande adresse mail du compte à changer, genere un nouveau, et le met à jour dans la base de donnée puis envoie un mail avec le nouveau mot de passe à l'adresse mail renseigné.

@@ -28,6 +28,8 @@ public class Login extends HttpServlet {
         password = req.getParameter("password");
 
         Connection con = null;
+        String filePath = getServletContext().getRealPath("connexionBDD.txt");
+        DS.pathFile = filePath;
 		try {
 			con = DS.getConnection();
 		} catch (Exception e1) {

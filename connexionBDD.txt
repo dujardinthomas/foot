@@ -1,0 +1,5 @@
+INFORMATIONS DE CONNEXION A LA BASE DE DONNÉES, EN AUCUN CAS MODIFIER LA STRUCTURE DU FICHIER 1)url 2)nom 3)mdp 4)driver
+jdbc:postgresql://localhost/foot
+thoma
+thoma
+org.postgresql.Driver

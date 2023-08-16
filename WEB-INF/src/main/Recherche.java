@@ -55,6 +55,10 @@ public class Recherche extends HttpServlet {
                 out.println("<input type=submit value=valider la table>");
 
                 out.println("</form>");
+                
+                out.println("<footer>");
+				out.println("Retour relatif : <a href=Accueil>Accueil</a>");
+				out.println("</footer>");
             }
 
             if (tableForm != null) {
@@ -117,6 +121,10 @@ public class Recherche extends HttpServlet {
                 out.println("<input type=submit value=chercher>");
 
                 out.println("</form>");
+                
+                out.println("<footer>");
+				out.println("Retour relatif : <a href=Accueil>Accueil</a>");
+				out.println("</footer>");
 
             }
 
@@ -179,6 +187,10 @@ public class Recherche extends HttpServlet {
                     }
 
                     out.println("</table>");
+                    
+                    out.println("<footer>");
+    				out.println("Retour relatif : <a href=Accueil>Accueil</a>");
+    				out.println("</footer>");
 
                     con.close();
 
